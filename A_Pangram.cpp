@@ -23,26 +23,60 @@ void solve() {
     int n;
     string str;
     cin>>n>>str;
+
+
+    // ## This code is not yet get executed.
+    // bool flag = true;
+    // char a1='a',a2='A';
+    // for0(i,n){
+    //     if(str[i]!=a1 and str[i]!=a2)
+    //     flag=false;
+    //     if(flag==false){
+    //         cout<<"NO"<<endl;
+    //         return;
+    //     }
+    //     a1++;
+    //     a2++;
+    // }
+    // cout<<"YES"<<endl;
+
+
+    set<char>st;
+    for0(i, n){
+        if(str[i]>=65 and str[i]<=90)
+        st.insert(str[i]+32);
+        else
+        st.insert(str[i]);
+    }
+
+    if(st.size()!=26){
+        no
+        return;
+    }
+
+    char ch='a';
     bool flag = true;
-    for0(i,n){
-        if(str[i]!=65 and str[i]!=97)
+    for(auto it=st.begin(); it!=st.end(); it++){
+        if(*it!=ch)
         flag=false;
         if(flag==false){
-            cout<<"NO"<<endl;
-            return;
+            break;
         }
+        ch++;
     }
-    cout<<"YES"<<endl;
+    
+    if(flag) yes
+    else no
 }
 
 signed main() {
     fast
-#ifndef ONLINE_JUDGE
+#ifndef ONLINE_JUDGE    
     freopen("error.txt", "w", stderr);
 #endif
 
     int t = 1;
-    cin >> t;
+    //cin >> t;
     while (t--)
         solve();
     return 0;
