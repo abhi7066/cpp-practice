@@ -20,25 +20,21 @@ using namespace std;
 void solve() {
     int n;
     cin >> n;
-    int a[n];
+    set<int>st;
     for0(i, n){
-        cin >> a[i];
+        int x;
+        cin>>x;
+        st.insert(x);
     }
-    int max_sum = 0;
-    sort(a, a+n, greater<int>());
-    // for(int i=n-1;i>0;i--){
-    //     if((a[n-1]+a[i]>max_sum) and (a[n-1]!=a[i]))
-    //     max_sum=a[n-1]+a[i];
-    // }
+    auto num1=st.rbegin();
+    auto num2=num1++;
+    int sum = *num1+*num2;
+    cout<<sum<<endl;
 
-    for0(i, n){
-        cout << a[i];
-    }
-    cout << max_sum << endl;
 }
 
 signed main() {
-    fast
+fast
 #ifndef ONLINE_JUDGE
     freopen("error.txt", "w", stderr);
 #endif
