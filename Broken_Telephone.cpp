@@ -19,18 +19,6 @@ using namespace std;
 #define debug(x)
 #endif
 
-
-// 1        3       1        1       1
-
-
-// last = 1
-// arr[i]= 3
-// arr[i+1]= 1
-// 
-
-
-
-
 void solve() {
     int n;
     cin >> n;
