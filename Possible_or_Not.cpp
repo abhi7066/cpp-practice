@@ -19,23 +19,17 @@ using namespace std;
 #define debug(x)
 #endif
 
-string subsequence(int *arr, int n, int b){
-    for0(i, n){
-        
-        for0(j, n){
-
-        }
-    }
-}
-
 void solve() {
     int n, b;
     cin >> n >> b;
-    int arr[n];
+    int ans=-1;
     for0(i, n){
-        cin>>arr[i];
+        int x;
+        cin>>x;
+        if((x&b)==b) ans&=x;
     }
-    cout<<subsequence(arr, n, b);
+    if(ans==b) yes
+    else no
 }
 
 signed main() {
