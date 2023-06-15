@@ -22,13 +22,11 @@ using namespace std;
 void solve() {
     int a,b;
     cin>>a>>b;
-    if(a>=b){
-        if(a-(a/b*b)<a-((a/b)+1)*b)
-        cout<<a-(a/b*b)<<endl;
-    }
-    else{
-        cout<<b-(b/a*a)<<endl;;
-    }
+    int ans=abs(a-b);
+    if(ans%10==0)
+    cout<<ans/10<<endl;
+    else
+    cout<<ans/10+1<<endl;
 }
 
 signed main() {
