@@ -20,13 +20,12 @@ using namespace std;
 #endif
 
 void solve() {
-    int x, y, n;
-    cin>>x>>y>>n;
-    for0(i, n){
-        int x;
-        cin>>x;
-        // 
-    }
+    string str;
+    cin>>str;
+    int s1= str[0]+str[1]+str[2];
+    int s2= str[3]+str[4]+str[5];
+    if(s1==s2) yes
+    else no
 }
 
 signed main() {
