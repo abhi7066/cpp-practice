@@ -19,18 +19,20 @@ using namespace std;
 #define debug(x)
 #endif
 
+void countdistinct(string str){
+    set<char>st;
+    for(char c:str){
+        if(c!=',' and c!='{' and c!='}' and c!=' '){
+        st.insert(c);
+        }
+    }
+    cout<<st.size();
+
+}
 void solve() {
     string str;
-    cin>>str;
-    set<char>st;
-    for0(i, str.length()){
-        st.insert(str[i]);
-    }
-    for(auto x:st){
-        cout<<x<<endl;
-    }
-
-    cout<<str.length()<<endl;
+    getline(cin, str);
+    countdistinct(str);
 }
 
 signed main() {
