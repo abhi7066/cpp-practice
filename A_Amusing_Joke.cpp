@@ -20,7 +20,8 @@ using namespace std;
 #endif
 
 void solve() {
-    int 
+    string str;
+    cin>>str;
 }
 
 signed main() {
@@ -30,7 +31,7 @@ signed main() {
 #endif
 
     int t = 1;
-    cin >> t;
+    //cin >> t;
     while (t--)
         solve();
     return 0;
