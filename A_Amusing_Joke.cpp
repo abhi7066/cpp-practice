@@ -22,6 +22,7 @@ using namespace std;
 void solve() {
     string str;
     cin>>str;
+    cout<<str<<endl;
 }
 
 signed main() {
