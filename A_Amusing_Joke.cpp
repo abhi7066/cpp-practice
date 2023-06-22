@@ -23,7 +23,6 @@ void solve() {
     string str;
     cin>>str;
     cout<<str<<endl;
-    cout<<str;
 }
 
 signed main() {
