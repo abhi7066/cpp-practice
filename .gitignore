@@ -37,6 +37,7 @@ nnect.lock
 /libpeerconnection.log
 testem.log
 /typings
+.prob
 
 # System files
 .DS_Store
