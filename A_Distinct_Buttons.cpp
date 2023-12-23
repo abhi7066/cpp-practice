@@ -30,14 +30,9 @@ void solve() {
         if (y>=1) up++;
         else if(y<=-1) down++;
     }
-    int cnt = 0;
-    if(left!=0) cnt++;
-    if(right!=0) cnt++;
-    if(up!=0) cnt++;
-    if(down!=0) cnt++;
 
-    if(cnt <= 3) yes
-    else no
+    if(left !=0 and right !=0 and up !=0 and down !=0) no
+    else yes
 }
 
 signed main() {
