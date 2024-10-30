@@ -1,0 +1,348 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeMiniProjectHeading}[3]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+      \small#3
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Abhishek Dethe} \\ \vspace{1pt}
+    Pune, Maharashtra, India \\ \vspace{1pt}
+     \small \href{tel:+917066268679}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-7066268679} ~} \href{mailto:abhishekdethe15@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{abhishekdethe15@gmail.com}}  ~ 
+    \href{https://linkedin.com/in/abhishek7066/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin.com/in/abhishek7066}}  ~
+    \href{https://github.com/abhi7066}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/abhi7066}} ~
+    \vspace{-2pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MES's Institute Of Management and Career Courses, Pune}{August 2022 - June 2024}
+      {Master of Computer Application - \textbf{Percentage} - \textbf{77.29\%}}{Maharashtra, India}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bharatiya Mahavidyalaya, Amravati}{August 2018 - June 2021}
+      {Bachelor of Science in Computer Science  - \textbf{Percentage} - \textbf{72.40\%}}{Maharashtra, India}
+  \resumeSubHeadingListEnd
+
+
+% %------RELEVANT COURSEWORK-------
+% \section{COURSEWORK / SKILLS}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-2pt, parsep=5pt]
+%                 \item Data Structures \& Algorithms
+%                 \item Operating Systems
+%                 \item Networking
+%                 \item Database Management System (DBMS)
+%                 \item Web Development
+%                 \item OOPS Concepts
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{INTERNSHIP}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {64 Squares LLC \href{https://www.64-squares.com/}{\raisebox{-0.1\height}\faExternalLink }}{July 2024 -- Present} 
+      {\underline{Jr. Data Engineer Trainee}}{Pune, India}
+      
+      \resumeItemListStart
+        \resumeItem{\normalsize{Expertly analyze and validate user prompts to ensure clarity, accuracy, and feasibility.}}
+        \resumeItem{\normalsize{Create and optimize prompts to effectively train \textbf{Large Language Models (LLMs)}, enhancing their accuracy and performance.}}
+        \resumeItem{\normalsize{Identify, diagnose, and resolve coding errors, ensuring high-quality, functional code in alignment with user requirements.}}
+        \resumeItem{\normalsize{Ensure code and plans are meticulously crafted and strictly adhere to user instructions and specifications.}}
+      
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+\resumeProjectHeading
+          {\href{https://github.com/abhi7066/SkillSurge}{\textbf{\large{\underline{SkillSurge}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{ReactJs, NodeJs, MongoDB, Tailwind CSS, HTML}}}{Mar 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{The \textbf{SkillSurge} platform is an innovative web application focused on simplifying online learning and skill development.}}
+            \resumeItem{\normalsize{It aims to provide a user-friendly experience, allowing individuals to easily access and create high-quality educational content.}}
+            \resumeItem{\normalsize{The platform's robust features include course management, progress tracking, and feedback mechanisms to support effective learning outcomes.}}
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+    
+       \resumeProjectHeading
+          {\href{https://github.com/abhi7066/EventX}{\textbf{\large{\underline{EventX}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{ReactJs, ExpressJs, MongoDB, Tailwind CSS, HTML}}}{Oct 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{EventX} is a web application that streamlines the \textbf{booking} of college campus facilities such as seminar halls, auditoriums, etc., and is currently used by my college.}}
+            \resumeItem{\normalsize{It enables users to easily reserve these spaces, providing \textbf{transparency regarding availability and notifying} relevant faculty and personnel about the bookings.}}
+            \resumeItem{\normalsize{This system enhances efficiency and better manages college resources for events and activities.}}
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+
+          \resumeProjectHeading
+          {\href{https://marketplace.visualstudio.com/items?itemName=DarkAlchemy.darkalchemy}{\textbf{\large{\underline{Dark Alchemy Theme}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Javascript, JSON}}}{Dec 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Created \textbf{"Dark Alchemy Theme"} for Visual Studio Code, focusing on color theory and UI/UX design.}}
+
+            \resumeItem{\normalsize{Optimized syntax highlighting and interface elements for improved readability and productivity.}}
+            
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%
+
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{C++, Python, JavaScript, SQL, NoSQL, HTML/CSS}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, NodeJS, ExpressJS, Git, Github, MongoDB, Snowflake, Looker Studio}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Sublime Text}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+
+%-----------Achievements-----------
+\section{ACHIEVEMENTS}
+ \begin{itemize}[leftmargin=0.08in, label={}]
+    \resumeItemListStart
+    
+       
+        \resumeItem{Highest rating of \textbf{895} at Codeforces, which is the top site in terms of participation in programs across the globe.}
+     
+        \resumeItem{Solved more than \textbf{200+} problems across  platforms.}
+            
+        \resumeItem{Secured all India rank of \textbf{157, 989, 1235}        respectively in Codechef's Long Challenge in the month of            February, March, and January among \textbf{15k+} participants.}
+     
+ 	\resumeItemListEnd
+ \end{itemize}
+ \vspace{-11pt}
+
+
+
+%-----------INVOLVEMENT---------------
+\section{EXTRA CURRICULAR}
+ \begin{itemize}[leftmargin=0.08in, label={}]
+    \resumeItemListStart
+     
+        \resumeItem{Lead and Editor of College Magazine - COLUMBUS}
+
+        \resumeItem{Placement Coordinator at MES Institute of Management and Career Courses, Pune.}
+
+         \resumeItem{Founder and Core Team Member of Coding Club at MES Institute of Management and Career Courses, Pune.}
+     
+ 	\resumeItemListEnd
+ \end{itemize}
+ \vspace{-11pt}
+
+
+
+
+
+%-----------Coding Profile Links-----------
+\section{CODING PROFILE LINKS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    
+
+        \resumeItem {\href{https://codeforces.com/profile/abhishek7066}{\textbf{Codeforces}: https://codeforces.com/profile/abhishek7066} \textbar{} \href{https://www.codechef.com/users/abhi7066}{\textbf{Codechef}: https://www.codechef.com/users/abhi7066}}
+   
+\end{itemize}
+\vspace{-11pt}
+
+
+
+
+
+ 
+%  %-----------CERTIFICATIONS---------------
+% \section{CERTIFICATIONS}
+
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{ReactJS \& Redux - Udemy}} \hspace{1.6cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Java}} \hspace{2.59cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {Command Line in Linux - Coursera}}\\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Python for Data Science - XIE}} \hspace{1cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{SQL}} \hspace{2.6cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Microsoft AI Classroom - Microsoft}} \\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{\textbf{5 Stars} in \textbf{C++} \& \textbf{SQL} \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{MongoDB Basics}} \hspace{0.5cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{NodeJS with Express \& MongoDB - Udemy}} \\
+
+
+\end{document}
